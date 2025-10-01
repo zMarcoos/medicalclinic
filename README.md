@@ -1,1 +1,1 @@
-### Medical Clinic 
+Medical Clinic 
