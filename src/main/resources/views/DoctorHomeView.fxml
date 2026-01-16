@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/24.0.1"
+            prefHeight="560.0" prefWidth="900.0"
+            style="-fx-background-color: #F5F7FB;"
+            stylesheets="@../styles/Home.css"
+            fx:controller="com.thevelopers.controller.doctor.DoctorHomeController">
+
+  <left>
+    <VBox prefWidth="240.0" spacing="14.0" styleClass="sidebar">
+      <padding>
+        <Insets top="18.0" right="16.0" bottom="16.0" left="16.0"/>
+      </padding>
+
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <ImageView fitHeight="34.0" fitWidth="42.0" preserveRatio="true" smooth="true">
+          <image>
+            <Image url="@../images/medical_icon_branco.png"/>
+          </image>
+        </ImageView>
+
+        <Label text="Medical" textFill="WHITE">
+          <font>
+            <Font name="JetBrains Mono Bold" size="22.0"/>
+          </font>
+        </Label>
+      </HBox>
+
+      <Region prefHeight="8.0"/>
+
+      <VBox spacing="4.0" styleClass="sidebar-card">
+        <padding>
+          <Insets top="12.0" right="12.0" bottom="12.0" left="12.0"/>
+        </padding>
+
+        <Label text="Área do Médico" textFill="WHITE">
+          <font>
+            <Font name="JetBrains Mono Bold" size="14.0"/>
+          </font>
+        </Label>
+
+        <Label text="Dr(a). Usuário" textFill="WHITE" style="-fx-opacity: 0.95;" fx:id="doctorNameLabel">
+          <font>
+            <Font name="JetBrains Mono" size="13.0"/>
+          </font>
+        </Label>
+
+        <Label text="Especialidade" textFill="WHITE" style="-fx-opacity: 0.85;" fx:id="specialityLabel">
+          <font>
+            <Font name="JetBrains Mono" size="12.0"/>
+          </font>
+        </Label>
+      </VBox>
+
+      <Region prefHeight="6.0"/>
+
+      <Button id="btnPacientes"
+              text="Pacientes"
+              mnemonicParsing="false"
+              onAction="#onAction"
+              prefHeight="42.0"
+              maxWidth="1.7976931348623157E308"/>
+
+      <Region VBox.vgrow="ALWAYS"/>
+
+      <Button id="btnSair"
+              text="Sair"
+              mnemonicParsing="false"
+              onAction="#onAction"
+              prefHeight="42.0"
+              maxWidth="1.7976931348623157E308"/>
+    </VBox>
+  </left>
+
+  <center>
+    <StackPane style="-fx-background-color: #F5F7FB;">
+      <VBox alignment="CENTER" spacing="16.0" maxWidth="720.0">
+        <padding>
+          <Insets top="26.0" right="26.0" bottom="26.0" left="26.0"/>
+        </padding>
+
+        <VBox alignment="CENTER" spacing="6.0">
+          <Label text="Bem-vindo(a), Doutor(a)" textFill="#1F2937">
+            <font>
+              <Font name="JetBrains Mono Bold" size="22.0"/>
+            </font>
+          </Label>
+          <Label text="Aqui você pode acessar a lista de pacientes." textFill="#6B7280">
+            <font>
+              <Font name="JetBrains Mono" size="13.0"/>
+            </font>
+          </Label>
+        </VBox>
+
+        <VBox prefWidth="520.0" spacing="10.0" styleClass="card" alignment="TOP_LEFT">
+          <padding>
+            <Insets top="18.0" right="18.0" bottom="18.0" left="18.0"/>
+          </padding>
+
+          <Label text="Pacientes" textFill="#1F2937">
+            <font>
+              <Font name="JetBrains Mono Bold" size="16.0"/>
+            </font>
+          </Label>
+
+          <Label text="Visualize pacientes cadastrados e acesse informações básicas."
+                 wrapText="true" textFill="#6B7280">
+            <font>
+              <Font name="JetBrains Mono" size="12.0"/>
+            </font>
+          </Label>
+
+          <Region prefHeight="8.0"/>
+
+          <Button text="Abrir lista de pacientes"
+                  mnemonicParsing="false"
+                  onAction="#onAction"
+                  prefHeight="40.0"
+                  maxWidth="1.7976931348623157E308"
+                  styleClass="btn-primary"/>
+        </VBox>
+
+        <HBox spacing="16.0" alignment="CENTER">
+          <VBox prefWidth="250.0" spacing="8.0" styleClass="card" alignment="TOP_LEFT">
+            <padding>
+              <Insets top="16.0" right="16.0" bottom="16.0" left="16.0"/>
+            </padding>
+            <Label text="Dica" textFill="#1F2937">
+              <font>
+                <Font name="JetBrains Mono Bold" size="14.0"/>
+              </font>
+            </Label>
+            <Label text="Use a busca na tela de pacientes para encontrar rapidamente."
+                   wrapText="true" textFill="#6B7280">
+              <font>
+                <Font name="JetBrains Mono" size="12.0"/>
+              </font>
+            </Label>
+          </VBox>
+
+          <VBox prefWidth="250.0" spacing="8.0" styleClass="card" alignment="TOP_LEFT">
+            <padding>
+              <Insets top="16.0" right="16.0" bottom="16.0" left="16.0"/>
+            </padding>
+            <Label text="Acesso" textFill="#1F2937">
+              <font>
+                <Font name="JetBrains Mono Bold" size="14.0"/>
+              </font>
+            </Label>
+            <Label text="Você está na visão do médico. Outras funções ficam na visão do paciente."
+                   wrapText="true" textFill="#6B7280">
+              <font>
+                <Font name="JetBrains Mono" size="12.0"/>
+              </font>
+            </Label>
+          </VBox>
+        </HBox>
+      </VBox>
+    </StackPane>
+  </center>
+</BorderPane>

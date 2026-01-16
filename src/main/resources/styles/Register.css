@@ -1,0 +1,7 @@
+.radio-button .radio {
+  -fx-mark-color: #1976D2;
+}
+
+.radio-button:selected .radio {
+  -fx-background-color: #1976D2;
+}

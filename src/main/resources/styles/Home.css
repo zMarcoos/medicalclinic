@@ -1,0 +1,94 @@
+.sidebar {
+  -fx-background-color: #1976D2;
+}
+
+.sidebar-card {
+  -fx-background-color: rgba(255, 255, 255, 0.10);
+  -fx-background-radius: 12;
+}
+
+.sidebar .button {
+  -fx-background-color: transparent;
+  -fx-text-fill: white;
+  -fx-border-color: rgba(255, 255, 255, 0.30);
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14 10 14;
+  -fx-cursor: hand;
+  -fx-font-family: "JetBrains Mono";
+  -fx-font-size: 13px;
+}
+
+.sidebar .button:hover {
+  -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+#btnPacientes {
+  -fx-background-color: rgba(255, 255, 255, 0.22);
+  -fx-border-color: transparent;
+  -fx-font-weight: bold;
+}
+
+#btnSair {
+  -fx-background-color: rgba(255, 255, 255, 0.10);
+}
+
+#btnSair:hover {
+  -fx-background-color: rgba(255, 255, 255, 0.18);
+}
+
+.button.btn-primary {
+  -fx-background-color: #1976D2 !important;
+  -fx-text-fill: white !important;
+
+  -fx-font-family: "JetBrains Mono";
+  -fx-font-weight: bold;
+  -fx-font-size: 13px;
+
+  -fx-background-radius: 10;
+  -fx-border-radius: 10;
+
+  -fx-border-color: transparent;
+  -fx-padding: 10 14 10 14;
+
+  -fx-cursor: hand;
+}
+
+.button.btn-primary:hover {
+  -fx-background-color: #1565C0 !important;
+}
+
+.button.btn-primary:pressed {
+  -fx-background-color: #0D47A1 !important;
+}
+
+.btn-secondary {
+  -fx-background-color: transparent;
+  -fx-text-fill: #1976D2;
+
+  -fx-border-color: #1976D2;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+
+  -fx-padding: 10 14 10 14;
+  -fx-cursor: hand;
+
+  -fx-font-family: "JetBrains Mono";
+  -fx-font-size: 13px;
+}
+
+.btn-secondary:hover {
+  -fx-background-color: rgba(25, 118, 210, 0.08);
+}
+
+.sidebar-logo {
+  -fx-text-fill: white;
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+}
+
+#btnAgendar {
+  -fx-background-color: rgba(255, 255, 255, 0.22);
+  -fx-border-color: transparent;
+  -fx-font-weight: bold;
+}

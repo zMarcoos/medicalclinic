@@ -1,0 +1,74 @@
+.root {
+  -fx-font-family: "JetBrains Mono";
+}
+
+.subtitle {
+  -fx-text-fill: #6B7280;
+  -fx-font-size: 12px;
+}
+
+.card {
+  -fx-background-color: white;
+  -fx-background-radius: 18;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 18, 0, 0, 6);
+}
+
+.table {
+  -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+  -fx-background-color: rgba(25, 118, 210, 0.10);
+  -fx-background-radius: 12 12 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+  -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+  -fx-text-fill: #111827;
+  -fx-font-weight: bold;
+}
+
+.table-row-cell {
+  -fx-background-color: white;
+}
+
+.table-row-cell:filled:selected,
+.table-row-cell:filled:selected .text {
+  -fx-background-color: rgba(25, 118, 210, 0.14);
+}
+
+.btn-primary {
+  -fx-background-color: #1976D2;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 13px;
+  -fx-background-radius: 14;
+  -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+  -fx-background-color: #1565C0;
+}
+
+.btn-primary:pressed {
+  -fx-background-color: #0D47A1;
+}
+
+.btn-secondary {
+  -fx-background-color: transparent;
+  -fx-text-fill: #1976D2;
+  -fx-border-color: #1976D2;
+  -fx-border-width: 1;
+  -fx-font-weight: bold;
+  -fx-font-size: 13px;
+  -fx-background-radius: 14;
+  -fx-border-radius: 14;
+  -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+  -fx-background-color: rgba(25, 118, 210, 0.08);
+}

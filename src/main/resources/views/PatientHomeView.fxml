@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="560.0" prefWidth="900.0"
+            style="-fx-background-color: #F5F7FB;"
+            stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/25"
+            fx:controller="com.thevelopers.controller.patient.PatientHomeController">
+
+  <left>
+    <VBox prefWidth="240.0" spacing="14.0" styleClass="sidebar">
+      <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="18.0"/>
+      </padding>
+
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <ImageView fitHeight="34.0" fitWidth="42.0" preserveRatio="true" smooth="true">
+          <image>
+            <Image url="@../images/medical_icon_branco.png"/>
+          </image>
+        </ImageView>
+
+        <Label text="Medical" textFill="WHITE">
+          <font>
+            <Font name="JetBrains Mono Bold" size="22.0"/>
+          </font>
+        </Label>
+      </HBox>
+
+      <Region prefHeight="10.0"/>
+
+      <Button id="btnAgendar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAction"
+              prefHeight="42.0" text="Agendar"/>
+
+      <Button id="btnConsultas" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAction"
+              prefHeight="42.0" text="Consultas"/>
+
+      <Region VBox.vgrow="ALWAYS"/>
+
+      <Button id="btnSair" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAction"
+              prefHeight="42.0" text="Sair"/>
+    </VBox>
+  </left>
+
+  <center>
+    <StackPane style="-fx-background-color: #F5F7FB;">
+      <VBox alignment="CENTER" maxWidth="720.0" spacing="14.0">
+        <padding>
+          <Insets bottom="26.0" left="26.0" right="26.0" top="26.0"/>
+        </padding>
+
+        <VBox alignment="CENTER" spacing="6.0">
+          <Label text="Painel do Paciente" textFill="#1F2937">
+            <font>
+              <Font name="JetBrains Mono Bold" size="22.0"/>
+            </font>
+          </Label>
+          <Label text="Escolha uma opção no menu para continuar." textFill="#6B7280">
+            <font>
+              <Font name="JetBrains Mono" size="13.0"/>
+            </font>
+          </Label>
+        </VBox>
+
+        <VBox alignment="CENTER" prefWidth="640.0" spacing="12.0" styleClass="card">
+          <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+          </padding>
+
+          <ImageView fitHeight="320.0" fitWidth="600.0" preserveRatio="true" smooth="true">
+            <image>
+              <Image url="@../images/doctors_panel.jpeg"/>
+            </image>
+          </ImageView>
+
+          <Label text="Horários disponíveis conforme o médico selecionado." textFill="#6B7280">
+            <font>
+              <Font name="JetBrains Mono" size="12.0"/>
+            </font>
+          </Label>
+        </VBox>
+
+        <Label text="Conectando pessoas à saúde, com cuidado e confiança." textFill="#6B7280">
+          <font>
+            <Font name="JetBrains Mono" size="12.0"/>
+          </font>
+        </Label>
+
+      </VBox>
+    </StackPane>
+  </center>
+
+</BorderPane>
